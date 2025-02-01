@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+.careerBuddyText {
+  font-family: 'Barriecito', cursive;
+  font-size: 20px;
+}
 
 :root {
   --background: #ffffff;
@@ -18,4 +25,64 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global CSS or component-specific CSS */
+@keyframes shoot {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1000px) translateY(1000px);
+    opacity: 0;
+  }
+}
+
+.star {
+  animation: shoot 5s infinite linear; /* Slower animation */
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 10; /* Ensure it's on top */
+}
+
+@keyframes fadeInCard {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-cardDelay-1 {
+  animation: fadeInCard 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.animate-cardDelay-2 {
+  animation: fadeInCard 1s ease-out forwards;
+  animation-delay: 2s;
+}
+
+.animate-cardDelay-3 {
+  animation: fadeInCard 1s ease-out forwards;
+  animation-delay: 3.5s;
+}
+
+.animate-cardDelay-4 {
+  animation: fadeInCard 1s ease-out forwards;
+  animation-delay: 5s;
 }

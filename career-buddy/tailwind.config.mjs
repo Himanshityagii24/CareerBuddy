@@ -11,6 +11,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'starry-animation': 'starryEffect 1.5s infinite',
+      },
+      keyframes: {
+        starryEffect: {
+          '0%': { backgroundPosition: '0 0' },
+          '100%': { backgroundPosition: '100% 100%' },
+        },
+      },
     },
   },
   plugins: [],
