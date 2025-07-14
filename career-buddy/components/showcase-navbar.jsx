@@ -5,28 +5,27 @@ const ShowcaseNavbar = () => {
   return (
     <div
       className="
-      overflow-hidden
-      p-10
-      rounded-[6px]
-      top-0 
-      md:mx-auto
-      transform
-      z-50
-      xl:w-4/5
-      2xl:w-[68%]
-      bg-white
-      flex
-      items-center
-      justify-between
-      py-6
-      px-4
-      md:px-8
-      mx-6
-      "
+        overflow-hidden
+        p-10
+        rounded-[6px]
+        top-0 
+        md:mx-auto
+        transform
+        z-50
+        xl:w-4/5
+        2xl:w-[68%]
+        bg-white
+        flex
+        items-center
+        justify-between
+        py-6
+        px-4
+        md:px-8
+        mx-6
+        "
       style={{ marginTop: "-20px" }}
     >
       <Link href="/" className="relative">
-       
         <Image
           src="/assets/panda.png"
           alt="Panda Logo"
@@ -39,8 +38,8 @@ const ShowcaseNavbar = () => {
           className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 text-center w-40"
         >
           <svg 
-            viewBox="0 0 160 60" 
-            width="100%" 
+            viewBox="0 0 160 60"
+            width="100%"
             height="60"
             preserveAspectRatio="xMidYMid meet"
           >
